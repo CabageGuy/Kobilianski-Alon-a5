@@ -52,13 +52,14 @@ public class Asteroid : MonoBehaviour
                 asteroidRB2D.linearVelocity = variance * rb2d.linearVelocity;
             }
         }
-
+        
         // Add score
         GameObject.Find("GameManager").GetComponent<GameManager>().AddScore();
 
         // Destroy bullet, then this asteroid
         Destroy(collider2D.gameObject);
         Destroy(this.gameObject);
+
     }
 
     public void MoveTowardsCentre()
@@ -73,5 +74,4 @@ public class Asteroid : MonoBehaviour
         rb2d.linearVelocity = Vector2.zero;
         rb2d.AddForce(force, ForceMode2D.Impulse);
     }
-
 }

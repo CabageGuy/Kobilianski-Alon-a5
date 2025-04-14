@@ -8,11 +8,11 @@ public class GameManager : MonoBehaviour
     private int lives;
     private bool gameStarted = false;
 
+
     public TMP_Text scoreDisplay;
     public TMP_Text livesDisplay;
     public TMP_Text gameOverDisplay;
     public TMP_Text startScreenDisplay;
-    public TMP_Text winDisplay;
 
     public AudioSource musicSource;     
     public AudioClip backgroundMusic;  
@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+   
         gameStarted = true;
         Time.timeScale = 1f;
         startScreenDisplay.enabled = false;
@@ -42,10 +43,9 @@ public class GameManager : MonoBehaviour
         if (musicSource != null && backgroundMusic != null)
         {
             musicSource.clip = backgroundMusic;
-            musicSource.loop = true; 
+            musicSource.loop = true;
             musicSource.Play();
         }
-
     }
 
     public void AddScore()
@@ -89,23 +89,6 @@ public class GameManager : MonoBehaviour
         return lives <= 0;
     }
 
-    private void CheckWinCondition()
-    {
-        GameObject[] asteroids = GameObject.FindGameObjectsWithTag("Asteroid");
-        if (asteroids.Length == 0 && !IsGameOver())
-        {
-            winDisplay.enabled = true;
-            gameStarted = false;
-            Time.timeScale = 0f;
-
-            if (musicSource != null && musicSource.isPlaying)
-            {
-                musicSource.Stop();
-            }
-        }
-    }
-
-
     private void UpdateScoreDisplay()
     {
         scoreDisplay.text = $"Score: {score}";
@@ -124,6 +107,7 @@ public class GameManager : MonoBehaviour
             {
                 StartGame();
             }
+            return;
         }
 
         if (IsGameOver())
@@ -135,6 +119,7 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
 
     private void PlaySound(AudioClip clip)
     {
