@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public TMP_Text livesDisplay;
     public TMP_Text gameOverDisplay;
     public TMP_Text startScreenDisplay;
+    public TMP_Text winDisplay;
 
     public AudioSource musicSource;     
     public AudioClip backgroundMusic;  
@@ -87,6 +88,23 @@ public class GameManager : MonoBehaviour
     {
         return lives <= 0;
     }
+
+    private void CheckWinCondition()
+    {
+        GameObject[] asteroids = GameObject.FindGameObjectsWithTag("Asteroid");
+        if (asteroids.Length == 0 && !IsGameOver())
+        {
+            winDisplay.enabled = true;
+            gameStarted = false;
+            Time.timeScale = 0f;
+
+            if (musicSource != null && musicSource.isPlaying)
+            {
+                musicSource.Stop();
+            }
+        }
+    }
+
 
     private void UpdateScoreDisplay()
     {
