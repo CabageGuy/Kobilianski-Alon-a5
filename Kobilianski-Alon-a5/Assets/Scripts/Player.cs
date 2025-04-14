@@ -56,6 +56,7 @@ public class Player : MonoBehaviour
         }
     }
 
+    
     private void OnTriggerEnter2D(Collider2D collider2D)
     {
         //Asteroid asteroid = collider2D.GetComponent<Asteroid>();

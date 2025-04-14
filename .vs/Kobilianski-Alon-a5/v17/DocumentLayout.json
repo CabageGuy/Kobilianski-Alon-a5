@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\alonk\\source\\repos\\Kobilianski-Alon-a5\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alonk\\source\\repos\\Kobilianski-Alon-a5\\Kobilianski-Alon-a5\\Assets\\Scripts\\Player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Kobilianski-Alon-a5\\Assets\\Scripts\\Player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alonk\\source\\repos\\Kobilianski-Alon-a5\\Kobilianski-Alon-a5\\Assets\\Scripts\\Teleport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Kobilianski-Alon-a5\\Assets\\Scripts\\Teleport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alonk\\source\\repos\\Kobilianski-Alon-a5\\Kobilianski-Alon-a5\\Assets\\Scripts\\Asteroid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Kobilianski-Alon-a5\\Assets\\Scripts\\Asteroid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alonk\\source\\repos\\Kobilianski-Alon-a5\\Kobilianski-Alon-a5\\Assets\\Scripts\\AsteroidSpawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Kobilianski-Alon-a5\\Assets\\Scripts\\AsteroidSpawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alonk\\source\\repos\\Kobilianski-Alon-a5\\Kobilianski-Alon-a5\\Assets\\Scripts\\GameManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Kobilianski-Alon-a5\\Assets\\Scripts\\GameManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Teleport.cs",
+              "DocumentMoniker": "C:\\Users\\alonk\\source\\repos\\Kobilianski-Alon-a5\\Kobilianski-Alon-a5\\Assets\\Scripts\\Teleport.cs",
+              "RelativeDocumentMoniker": "Kobilianski-Alon-a5\\Assets\\Scripts\\Teleport.cs",
+              "ToolTip": "C:\\Users\\alonk\\source\\repos\\Kobilianski-Alon-a5\\Kobilianski-Alon-a5\\Assets\\Scripts\\Teleport.cs",
+              "RelativeToolTip": "Kobilianski-Alon-a5\\Assets\\Scripts\\Teleport.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T19:56:40.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Asteroid.cs",
+              "DocumentMoniker": "C:\\Users\\alonk\\source\\repos\\Kobilianski-Alon-a5\\Kobilianski-Alon-a5\\Assets\\Scripts\\Asteroid.cs",
+              "RelativeDocumentMoniker": "Kobilianski-Alon-a5\\Assets\\Scripts\\Asteroid.cs",
+              "ToolTip": "C:\\Users\\alonk\\source\\repos\\Kobilianski-Alon-a5\\Kobilianski-Alon-a5\\Assets\\Scripts\\Asteroid.cs",
+              "RelativeToolTip": "Kobilianski-Alon-a5\\Assets\\Scripts\\Asteroid.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T19:56:38.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AsteroidSpawner.cs",
+              "DocumentMoniker": "C:\\Users\\alonk\\source\\repos\\Kobilianski-Alon-a5\\Kobilianski-Alon-a5\\Assets\\Scripts\\AsteroidSpawner.cs",
+              "RelativeDocumentMoniker": "Kobilianski-Alon-a5\\Assets\\Scripts\\AsteroidSpawner.cs",
+              "ToolTip": "C:\\Users\\alonk\\source\\repos\\Kobilianski-Alon-a5\\Kobilianski-Alon-a5\\Assets\\Scripts\\AsteroidSpawner.cs",
+              "RelativeToolTip": "Kobilianski-Alon-a5\\Assets\\Scripts\\AsteroidSpawner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T19:56:36.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\alonk\\source\\repos\\Kobilianski-Alon-a5\\Kobilianski-Alon-a5\\Assets\\Scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Kobilianski-Alon-a5\\Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "C:\\Users\\alonk\\source\\repos\\Kobilianski-Alon-a5\\Kobilianski-Alon-a5\\Assets\\Scripts\\GameManager.cs",
+              "RelativeToolTip": "Kobilianski-Alon-a5\\Assets\\Scripts\\GameManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T19:56:34.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\alonk\\source\\repos\\Kobilianski-Alon-a5\\Kobilianski-Alon-a5\\Assets\\Scripts\\Player.cs",
+              "RelativeDocumentMoniker": "Kobilianski-Alon-a5\\Assets\\Scripts\\Player.cs",
+              "ToolTip": "C:\\Users\\alonk\\source\\repos\\Kobilianski-Alon-a5\\Kobilianski-Alon-a5\\Assets\\Scripts\\Player.cs",
+              "RelativeToolTip": "Kobilianski-Alon-a5\\Assets\\Scripts\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T19:56:32.235Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
