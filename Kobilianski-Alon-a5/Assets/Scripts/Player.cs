@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -12,73 +11,47 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private GameManager gameManager;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip shootClip;
 
     private void Update()
     {
-        // Spawn bullet on mouse click
-        int leftClickID = 0;
-        if (Input.GetMouseButtonDown(leftClickID))
+        if (Input.GetMouseButtonDown(0))
         {
-            // Bullet transform information when spawned
-            Vector3 pos = transform.position + transform.up;
-            Quaternion rot = Quaternion.identity;
-
-            // Create a clone of bullet object
-            GameObject bullet = Instantiate(bulletPrefab, pos, rot);
-            Rigidbody2D bulletRB2D = bullet.GetComponent<Rigidbody2D>();
-
-            // Shoot bullet in facing direction
-            Vector2 force = transform.up * bulletSpeed;
-            bulletRB2D.AddForce(force, ForceMode2D.Impulse);
-
-            // Destroy bullet after this much time
+            // Spawn and shoot bullet
+            GameObject bullet = Instantiate(bulletPrefab, transform.position + transform.up, Quaternion.identity);
+            bullet.GetComponent<Rigidbody2D>().AddForce(transform.up * bulletSpeed, ForceMode2D.Impulse);
             Destroy(bullet, bulletLifetime);
+
+            // Play shooting sound
+            audioSource?.PlayOneShot(shootClip);
         }
     }
 
-    // Update is called once per physics frame
     void FixedUpdate()
     {
-        // Forcibly rotate player when using left-right inputs
-        float rotationAngle = -Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime;    
-        rb2d.MoveRotation(rotationAngle + transform.rotation.eulerAngles.z);
+        float rotation = -Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime;
+        rb2d.MoveRotation(transform.rotation.eulerAngles.z + rotation);
 
-        // Add force to player
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) && rb2d.linearVelocity.magnitude < maxVelocity)
         {
-            // Cap movement speed
-            bool canApplyVelocity = rb2d.linearVelocity.magnitude < maxVelocity;
-            if (canApplyVelocity)
-            {
-                Vector2 thrustForce = transform.up * thrust;
-                rb2d.AddForce(thrustForce);
-            }
+            rb2d.AddForce(transform.up * thrust);
         }
     }
 
-    
-    private void OnTriggerEnter2D(Collider2D collider2D)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        //Asteroid asteroid = collider2D.GetComponent<Asteroid>();
-        //if (asteroid == null)
-        //    return;
+        if (!other.CompareTag("Asteroid")) return;
 
-        // Don't run code past this check if not an asteroid
-        bool isAsteroid = collider2D.gameObject.CompareTag("Asteroid");
-        if (!isAsteroid)
-            return;
-
-        // Lose a life, handle case when lives run out
         gameManager.RemoveLife();
+
         if (gameManager.IsGameOver())
         {
-            // Destroy player -- code stops running after this!
-            Destroy(this.gameObject);
+            Destroy(gameObject);
+            return;
         }
 
-        // Reset player position
         rb2d.MovePosition(Vector2.zero);
-
-        // Reset asteroids...
     }
 }
